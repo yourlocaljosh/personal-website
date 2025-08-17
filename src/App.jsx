@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Github, Linkedin, Mail, Code, Briefcase, GraduationCap, ExternalLink, Moon, Sun } from 'lucide-react';
 import { motion } from 'framer-motion';
-import quicktrainImage from './assets/quicktrain.png';
-import ELObot from './assets/ELObot.png';
+import quicktrainImage from './assets/images/quicktrain.png';
+import ELObot from './assets/images/ELObot.png';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
