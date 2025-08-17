@@ -20,8 +20,8 @@ const App = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'projects', 'skills', 'education'];
-      const scrollPosition = window.scrollY + 100; // Add offset for better detection
+      const sections = ['about', 'experience', 'projects', 'education', 'skills'];
+      const scrollPosition = window.scrollY + 100;
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = document.getElementById(sections[i]);
@@ -128,7 +128,7 @@ const App = () => {
             joshsw
           </motion.div>
           <div className="hidden md:flex space-x-8">
-            {['about', 'experience', 'projects', 'skills', 'education'].map((section) => (
+            {['about', 'experience', 'projects', 'education', 'skills'].map((section) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
@@ -394,29 +394,7 @@ const App = () => {
           </div>
         </div>
       </section>
-
-      <section id="skills" className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold mb-4">Skills</h2>
-            <div className="w-16 h-1 bg-blue-400 mx-auto"></div>
-          </motion.div>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            {skills.map((skill, index) => (
-              <div key={index} className="flex items-center p-3 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-blue-500/50 transition-colors">
-                <span className="text-gray-300">{skill.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      
       <section id="education" className="py-20 px-6 bg-gray-800/30">
         <div className="max-w-4xl mx-auto">
           <motion.div
@@ -464,6 +442,29 @@ const App = () => {
           </motion.div>
         </div>
       </section>
+
+      <section id="skills" className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl font-bold mb-4">Skills</h2>
+            <div className="w-16 h-1 bg-blue-400 mx-auto"></div>
+          </motion.div>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            {skills.map((skill, index) => (
+              <div key={index} className="flex items-center p-3 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-blue-500/50 transition-colors">
+                <span className="text-gray-300">{skill.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <footer className="bg-gray-900 border-t border-gray-800 py-12 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col lg:flex-row justify-between items-center">
