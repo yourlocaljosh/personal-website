@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Mail, Code, Briefcase, GraduationCap, ExternalLink, Moon, Sun } from 'lucide-react';
 import { motion } from 'framer-motion';
 import quicktrainImage from './assets/images/quicktrain.PNG';
