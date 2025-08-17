@@ -155,12 +155,12 @@ const App = () => {
             <p className="text-xl text-gray-400 mb-8">{personalInfo.title}</p>
             
             <div className="flex justify-center items-center space-x-6 mb-8">
-              <a href="#" className="flex items-center text-gray-400 hover:text-white transition-colors">
+              <a href="https://github.com/yourlocaljosh" className="flex items-center text-gray-400 hover:text-white transition-colors">
                 <Github size={24} className="mr-2" />
                 GitHub
               </a>
               <div className="w-px h-6 bg-gray-700"></div>
-              <a href="#" className="flex items-center text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/seungwon-hong-156375255/" className="flex items-center text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={24} className="mr-2" />
                 LinkedIn
               </a>
