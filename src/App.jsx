@@ -88,7 +88,7 @@ const App = () => {
   const education = [
     {
       degree: "Data Science + Computer Engineering",
-      school: "University of Michigan",
+      school: "University of Michigan | joshsw@umich.edu",
       duration: "2024 - 2028",
       gpa: "B.S.E.",
       coursework: ["Data Structures & Algorithms", "Discrete Mathematics", "Computer Organization", "Linear Algebra"]
@@ -394,7 +394,7 @@ const App = () => {
           </div>
         </div>
       </section>
-      
+
       <section id="education" className="py-20 px-6 bg-gray-800/30">
         <div className="max-w-4xl mx-auto">
           <motion.div
