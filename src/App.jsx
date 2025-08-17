@@ -18,6 +18,24 @@ const App = () => {
     }
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['about', 'experience', 'projects', 'skills', 'education'];
+      const scrollPosition = window.scrollY + 100; // Add offset for better detection
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sections[i]);
+        if (section && section.offsetTop <= scrollPosition) {
+          setActiveSection(sections[i]);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const personalInfo = {
     firstName: "Seungwon",
     nickname: "Josh",
