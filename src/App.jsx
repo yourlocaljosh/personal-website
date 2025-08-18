@@ -167,7 +167,7 @@ const App = () => {
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-4">
               <span className="text-white">{personalInfo.firstName}</span>
-              <span className="text-blue-400"> '{personalInfo.nickname}' </span>
+              <span className="text-blue-400"> "{personalInfo.nickname}" </span>
               <span className="text-white">{personalInfo.lastName}</span>
             </h1>
             <p className="text-xl text-gray-400 mb-8">{personalInfo.title}</p>
