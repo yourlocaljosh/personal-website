@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail, Code, Briefcase, GraduationCap, ExternalLink, M
 import { motion } from 'framer-motion';
 import quicktrainImage from './assets/images/quicktrain.PNG';
 import ELObot from './assets/images/elobot.PNG';
+import { Analytics } from "@vercel/analytics/next"
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
