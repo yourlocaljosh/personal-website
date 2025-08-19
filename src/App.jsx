@@ -147,10 +147,10 @@ const App = () => {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center space-x-4"
           >
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://github.com/yourlocaljosh" target="_blank" className="text-gray-400 hover:text-white transition-colors">
               <Github size={20} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/seungwon-hong-156375255/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
               <Linkedin size={20} />
             </a>
             <div className="w-px h-6 bg-gray-700"></div>
@@ -173,12 +173,12 @@ const App = () => {
             <p className="text-xl text-gray-400 mb-8">{personalInfo.title}</p>
             
             <div className="flex justify-center items-center space-x-6 mb-8">
-              <a href="https://github.com/yourlocaljosh" className="flex items-center text-gray-400 hover:text-white transition-colors">
+              <a href="https://github.com/yourlocaljosh" target="_blank" className="flex items-center text-gray-400 hover:text-white transition-colors">
                 <Github size={24} className="mr-2" />
                 GitHub
               </a>
               <div className="w-px h-6 bg-gray-700"></div>
-              <a href="https://www.linkedin.com/in/seungwon-hong-156375255/" className="flex items-center text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/seungwon-hong-156375255/" target="_blank" className="flex items-center text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={24} className="mr-2" />
                 LinkedIn
               </a>
@@ -377,12 +377,12 @@ const App = () => {
                     ))}
                   </div>
                   <div className="flex space-x-4">
-                    <a href={project.github} className="flex items-center text-gray-400 hover:text-white transition-colors text-sm">
+                    <a href={project.github} target="_blank" className="flex items-center text-gray-400 hover:text-white transition-colors text-sm">
                       <Github size={14} className="mr-1" />
                       Code
                     </a>
                     {project.link && project.link !== '#' && (
-                      <a href={project.link} className="flex items-center text-gray-400 hover:text-white transition-colors text-sm">
+                      <a href={project.link} target="_blank" className="flex items-center text-gray-400 hover:text-white transition-colors text-sm">
                         <ExternalLink size={14} className="mr-1" />
                         Link
                       </a>
@@ -470,15 +470,15 @@ const App = () => {
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <div className="mb-6 lg:mb-0">
               <h3 className="text-xl font-bold text-blue-400 mb-2">
-                {personalInfo.firstName} '{personalInfo.nickname}' {personalInfo.lastName}
+                {personalInfo.firstName} "{personalInfo.nickname}" {personalInfo.lastName}
               </h3>
               <p className="text-gray-400">{personalInfo.title} at {personalInfo.university}</p>
             </div>
             <div className="flex space-x-6">
-              <a href="https://github.com/yourlocaljosh" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://github.com/yourlocaljosh" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                 <Github size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/seungwon-hong-156375255/" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/seungwon-hong-156375255/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
