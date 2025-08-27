@@ -53,17 +53,17 @@ const App = () => {
     { name: "JavaScript"},
     { name: "Java"},
     { name: "CSS"},
-    { name: "React"},
+    { name: "React.js"},
     { name: "SQL"}
   ];
 
   const experiences = [
     {
-      title: "TBA",
-      company: "TBA",
+      title: "Software Engineer Intern",
+      company: "Klawsome",
       duration: "Fall 2025",
-      description: "TBA",
-      technologies: ["React", "HTML", "CSS"]
+      description: "Designing and developing front-end web interface for improved customer interaction",
+      technologies: ["React.js", "HTML", "CSS"]
     },
   ];
 
@@ -71,7 +71,7 @@ const App = () => {
     {
       title: "Quicktrain",
       description: "Fitness routine generator based on the user's biometrics and preferences.",
-      technologies: ["React", "TailwindCSS", "FramerMotion", "Vite"],
+      technologies: ["React.js", "TailwindCSS", "FramerMotion", "Vite"],
       github: "https://github.com/yourlocaljosh/quicktrain",
       link: "https://www.quicktrain.fit",
       image: quicktrainImage
