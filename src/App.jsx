@@ -6,35 +6,44 @@ import ELObot from './assets/images/elobot.PNG';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
+  const [scrolling, setScrolling] = useState(null);
 
   const scrollToSection = (sectionId) => {
+    setScrolling(sectionId)
+    setActiveSection(sectionId);
+
     const element = document.getElementById(sectionId);
-    if (element) {
+    if(element){
       element.scrollIntoView({ 
         behavior: 'smooth',
         block: 'start'
       });
-      setActiveSection(sectionId);
     }
+
+    setTimeout(() => {
+      setScrolling(null);
+    }, 1000);
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'projects', 'education', 'skills', 'extras'];
-      const scrollPosition = window.scrollY + 100;
+      if(!scrolling){
+        const sections = ['about', 'experience', 'projects', 'education', 'skills', 'extras'];
+        const scrollPosition = window.scrollY + 100;
 
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = document.getElementById(sections[i]);
-        if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(sections[i]);
-          break;
+        for(let i = sections.length - 1; i >= 0; i--){
+          const section = document.getElementById(sections[i]);
+          if (section && section.offsetTop <= scrollPosition) {
+            setActiveSection(sections[i]);
+            break;
+          }
         }
       }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [scrolling]);
 
   const personalInfo = {
     firstName: "Seungwon",
