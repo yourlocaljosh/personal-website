@@ -104,6 +104,23 @@ const App = () => {
     }
   ];
 
+  const extrasItems = [
+    {
+      title: "Watch Me Code",
+      description: "Watch me create the part of the website this very video is in",
+      type: "video",
+      media: "https://www.youtube.com/embed/",
+      tags: ["Coding"]
+    },
+    {
+      title: "Table Tennis Training",
+      description: "I joined the Michigan Table Tennis Club recently, I'm really bad but I'm going to get good",
+      type: "video",
+      media: "https://www.youtube.com/embed/",
+      tags: ["Sports"]
+    }
+  ]
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -469,6 +486,107 @@ const App = () => {
               <div key={index} className="flex items-center p-3 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-blue-500/50 transition-colors">
                 <span className="text-gray-300">{skill.name}</span>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="extras" className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl font-bold mb-4">Extras</h2>
+            <div className="w-16 h-1 bg-blue-400 mx-auto"></div>
+          </motion.div>
+
+          <div className="space-y-20">
+            {extrasItems.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="flex flex-col lg:flex-row items-center gap-12"
+              >
+                {index % 2 === 0 ? (
+                  <>
+                    <div className="lg:w-1/2">
+                      <h3 className="text-2xl font-semibold mb-4 text-white">{item.title}</h3>
+                      <p className="text-gray-300 mb-4 leading-relaxed">{item.description}</p>
+                      {item.tags && (
+                        <div className="flex flex-wrap gap-2">
+                          {item.tags.map((tag, tagIndex) => (
+                            <span 
+                              key={tagIndex}
+                              className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm"
+                            >{tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                    <div className="lg:w-1/2 w-full">
+                      {item.type === 'image' ? (
+                        <img 
+                          src={item.media} 
+                          alt={item.title}
+                          className="rounded-xl shadow-lg w-full h-64 object-cover"
+                        />
+                      ) : item.type === 'video' ? (
+                        <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
+                          <iframe 
+                            src={item.media}
+                            className="w-full h-full"
+                            frameBorder="0"
+                            allowFullScreen
+                          ></iframe>
+                        </div>
+                      ) : null}
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="lg:w-1/2 w-full order-2 lg:order-1">
+                      {item.type === 'image' ? (
+                        <img 
+                          src={item.media} 
+                          alt={item.title}
+                          className="rounded-xl shadow-lg w-full h-64 object-cover"
+                        />
+                      ) : item.type === 'video' ? (
+                        <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
+                          <iframe 
+                            src={item.media}
+                            className="w-full h-full"
+                            frameBorder="0"
+                            allowFullScreen
+                          ></iframe>
+                        </div>
+                      ) : null}
+                    </div>
+                    <div className="lg:w-1/2 order-1 lg:order-2">
+                      <h3 className="text-2xl font-semibold mb-4 text-white">{item.title}</h3>
+                      <p className="text-gray-300 mb-4 leading-relaxed">{item.description}</p>
+                      {item.tags && (
+                        <div className="flex flex-wrap gap-2">
+                          {item.tags.map((tag, tagIndex) => (
+                            <span 
+                              key={tagIndex}
+                              className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm"
+                            >{tag}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </>
+                )}
+              </motion.div>
             ))}
           </div>
         </div>
