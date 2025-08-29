@@ -20,7 +20,7 @@ const App = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'projects', 'education', 'skills'];
+      const sections = ['about', 'experience', 'projects', 'education', 'skills', 'extras'];
       const scrollPosition = window.scrollY + 100;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -128,7 +128,7 @@ const App = () => {
             joshsw
           </motion.div>
           <div className="hidden md:flex space-x-8">
-            {['about', 'experience', 'projects', 'education', 'skills'].map((section) => (
+            {['about', 'experience', 'projects', 'education', 'skills', 'extras'].map((section) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
