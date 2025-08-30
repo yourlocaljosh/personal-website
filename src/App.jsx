@@ -109,11 +109,11 @@ const App = () => {
       title: "Watch Me Code",
       description: "Watch me create the part of the website this very video is in",
       type: "video",
-      media: "https://www.youtube.com/embed/",
+      media: "https://www.youtube.com/embed/rIPxg3o0R48",
       tags: ["Coding"]
     },
     {
-      title: "Table Tennis Training",
+      title: "Coming Soon",
       description: "I joined the Michigan Table Tennis Club recently, I'm really bad but I'm going to get good",
       type: "video",
       media: "https://www.youtube.com/embed/",
@@ -234,7 +234,7 @@ const App = () => {
             <motion.div variants={itemVariants} className="bg-gray-800/50 rounded-xl p-6 border border-gray-700 hover:border-blue-500/50 transition-colors">
               <GraduationCap className="text-blue-400 mb-4 mx-auto" size={32} />
               <h3 className="text-lg font-semibold mb-2">Academics</h3>
-              <p className="text-gray-400 text-sm">I know the website is empty. I just made it! Stay tuned for cool stuff.</p>
+              <p className="text-gray-400 text-sm">I'm always up to something cool... stay tuned</p>
             </motion.div>
           </motion.div>
         </div>
