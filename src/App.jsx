@@ -59,7 +59,6 @@ const App = () => {
   const skills = [
     { name: "C++"},
     { name: "Python"},
-    { name: "JavaScript"},
     { name: "Java"},
     { name: "CSS"},
     { name: "React.js"},
