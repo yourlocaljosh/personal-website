@@ -67,13 +67,6 @@ const App = () => {
 
   const experiences = [
     {
-      title: "Engineering Team",
-      company: "NASA L\'SPACE Mission Concept Academy",
-      duration: "Fall 2025",
-      description: "TBA",
-      technologies: []
-    },
-    {
       title: "Software Engineer Intern",
       company: "Klawsome",
       duration: "Summer 2025",
