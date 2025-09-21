@@ -204,6 +204,7 @@ const App = () => {
                     src={portraitImage}
                     alt={"Headshot of Me"}
                     className="w-full h-full object-cover"
+                    style={{ objectPosition: 'calc(50%) 50%' }}
                   />
                 </div>
               </div>
