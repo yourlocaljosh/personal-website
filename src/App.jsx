@@ -233,35 +233,10 @@ const App = () => {
               <div className="w-32 h-px bg-gray-700 mx-auto lg:mx-0"></div>
             </div>
           </motion.div>
-
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            className="grid md:grid-cols-3 gap-8 mt-24"
-          >
-            <motion.div variants={itemVariants} className="bg-gray-800/50 rounded-xl p-6 border border-gray-700 hover:border-blue-500/50 transition-colors">
-              <Code className="text-blue-400 mb-4 mx-auto" size={32} />
-              <h3 className="text-lg font-semibold mb-2">import Josh</h3>
-              <p className="text-gray-400 text-sm">I'm passionate about building useful, impactful programs</p>
-            </motion.div>
-            
-            <motion.div variants={itemVariants} className="bg-gray-800/50 rounded-xl p-6 border border-gray-700 hover:border-blue-500/50 transition-colors">
-              <Briefcase className="text-blue-400 mb-4 mx-auto" size={32} />
-              <h3 className="text-lg font-semibold mb-2">Experiences</h3>
-              <p className="text-gray-400 text-sm">Incoming intern somewhere this summer</p>
-            </motion.div>
-            
-            <motion.div variants={itemVariants} className="bg-gray-800/50 rounded-xl p-6 border border-gray-700 hover:border-blue-500/50 transition-colors">
-              <GraduationCap className="text-blue-400 mb-4 mx-auto" size={32} />
-              <h3 className="text-lg font-semibold mb-2">Academics</h3>
-              <p className="text-gray-400 text-sm">I'm always up to something cool... stay tuned</p>
-            </motion.div>
-          </motion.div>
         </div>
       </section>
 
-      <section id="about" className="py-20 px-6 bg-gray-800/30">
+      <section id="about" className="py-10 px-6 bg-gray-800/30">
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
