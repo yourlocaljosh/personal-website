@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail, Code, Briefcase, GraduationCap, ExternalLink, M
 import { motion } from 'framer-motion';
 import quicktrainImage from './assets/images/quicktrain.PNG';
 import ELObot from './assets/images/elobot.PNG';
+import portraitImage from './assets/images/portrait.jpg';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -49,7 +50,7 @@ const App = () => {
     firstName: "Seungwon",
     nickname: "Josh",
     lastName: "Hong",
-    title: "Software Engineering",
+    title: "Data Science @ U-M | Software Engineering",
     university: "University of Michigan",
     year: "Sophomore",
     location: "Ann Arbor, MI",
@@ -95,10 +96,10 @@ const App = () => {
 
   const education = [
     {
-      degree: "Data Science + Computer Engineering",
+      degree: "Data Science",
       school: "University of Michigan | joshsw@umich.edu",
       duration: "2024 - 2028",
-      gpa: "B.S.E.",
+      gpa: "B.S.",
       coursework: ["Data Structures & Algorithms", "Discrete Mathematics", "Computer Organization", "Linear Algebra"]
     }
   ];
@@ -113,7 +114,7 @@ const App = () => {
     },
     {
       title: "Coming Soon",
-      description: "I joined the Michigan Table Tennis Club recently, I'm really bad but I'm going to get good",
+      description: "I joined the Michigan Table Tennis Club recently. Watch me improve! (soon)",
       type: "video",
       media: "https://www.youtube.com/embed/",
       tags: ["Sports"]
@@ -184,39 +185,59 @@ const App = () => {
       </header>
 
       <section className="pt-32 pb-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="flex flex-col lg:flex-row items-center gap-12"
           >
-            <h1 className="text-5xl md:text-7xl font-bold mb-4">
-              <span className="text-white">{personalInfo.firstName}</span>
-              <span className="text-blue-400"> "{personalInfo.nickname}" </span>
-              <span className="text-white">{personalInfo.lastName}</span>
-            </h1>
-            <p className="text-xl text-gray-400 mb-8">{personalInfo.title}</p>
-            
-            <div className="flex justify-center items-center space-x-6 mb-8">
-              <a href="https://github.com/yourlocaljosh" target="_blank" className="flex items-center text-gray-400 hover:text-white transition-colors">
-                <Github size={24} className="mr-2" />
-                GitHub
-              </a>
-              <div className="w-px h-6 bg-gray-700"></div>
-              <a href="https://www.linkedin.com/in/seungwon-hong-156375255/" target="_blank" className="flex items-center text-gray-400 hover:text-white transition-colors">
-                <Linkedin size={24} className="mr-2" />
-                LinkedIn
-              </a>
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="w-64 h-64 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-2xl flex items-center justify-center">
+                <div className="w-60 h-60 rounded-full bg-gray-900 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src={portraitImage}
+                    alt={"Headshot of Me"}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </motion.div>
+
+            <div className="flex-1 text-center lg:text-left">
+              <h1 className="text-5xl md:text-7xl font-bold mb-4">
+                <span className="text-white">{personalInfo.firstName}</span>
+                <span className="text-blue-400"> "{personalInfo.nickname}" </span>
+                <span className="text-white">{personalInfo.lastName}</span>
+              </h1>
+              <p className="text-xl text-gray-400 mb-8">{personalInfo.title}</p>
+              
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 mb-8">
+                <a href="https://github.com/yourlocaljosh" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-white transition-colors">
+                  <Github size={24} className="mr-2" />
+                  GitHub
+                </a>
+                <div className="w-px h-6 bg-gray-700 hidden sm:block"></div>
+                <a href="https://www.linkedin.com/in/seungwon-hong-156375255/" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-white transition-colors">
+                  <Linkedin size={24} className="mr-2" />
+                  LinkedIn
+                </a>
+              </div>
+              
+              <div className="w-32 h-px bg-gray-700 mx-auto lg:mx-0"></div>
             </div>
-            
-            <div className="w-32 h-px bg-gray-700 mx-auto mb-12"></div>
           </motion.div>
 
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="grid md:grid-cols-3 gap-8 mt-16"
+            className="grid md:grid-cols-3 gap-8 mt-24"
           >
             <motion.div variants={itemVariants} className="bg-gray-800/50 rounded-xl p-6 border border-gray-700 hover:border-blue-500/50 transition-colors">
               <Code className="text-blue-400 mb-4 mx-auto" size={32} />
@@ -227,7 +248,7 @@ const App = () => {
             <motion.div variants={itemVariants} className="bg-gray-800/50 rounded-xl p-6 border border-gray-700 hover:border-blue-500/50 transition-colors">
               <Briefcase className="text-blue-400 mb-4 mx-auto" size={32} />
               <h3 className="text-lg font-semibold mb-2">Experiences</h3>
-              <p className="text-gray-400 text-sm">Incoming intern at ???</p>
+              <p className="text-gray-400 text-sm">Incoming intern somewhere this summer</p>
             </motion.div>
             
             <motion.div variants={itemVariants} className="bg-gray-800/50 rounded-xl p-6 border border-gray-700 hover:border-blue-500/50 transition-colors">
