@@ -230,7 +230,7 @@ const App = () => {
                 </a>
               </div>
               
-              <div className="w-32 h-px bg-gray-700 mx-auto lg:mx-0"></div>
+              <div className="w-full h-px bg-gray-700 mx-auto lg:mx-0"></div>
             </div>
           </motion.div>
         </div>
