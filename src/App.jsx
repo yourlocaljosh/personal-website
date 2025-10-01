@@ -50,7 +50,7 @@ const App = () => {
     firstName: "Seungwon",
     nickname: "Josh",
     lastName: "Hong",
-    title: "Data Science @ U-M | Software Engineering",
+    title: "Data Science @ U-M",
     university: "University of Michigan",
     year: "Sophomore",
     location: "Ann Arbor, MI",
