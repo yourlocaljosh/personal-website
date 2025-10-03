@@ -58,11 +58,11 @@ const App = () => {
   };
 
   const skills = [
-    { name: "C++"},
-    { name: "Python"},
-    { name: "Java"},
-    { name: "CSS"},
-    { name: "React.js"},
+    { name: "C++", link: "https://eecs281staff.github.io/eecs281.org/"},
+    { name: "Python", link: "https://github.com/yourlocaljosh/ELObot/tree/main"},
+    { name: "Java", link:"https://modrinth.com/user/klism"},
+    { name: "CSS", link: "https://github.com/yourlocaljosh/personal-website"},
+    { name: "React.js", link:"https://www.quicktrain.fit/"},
     { name: "SQL"}
   ];
 
@@ -479,9 +479,14 @@ const App = () => {
           
           <div className="grid md:grid-cols-3 gap-6">
             {skills.map((skill, index) => (
-              <div key={index} className="flex items-center p-3 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-blue-500/50 transition-colors">
+              <a 
+                key={index} 
+                href={skill.link}
+                target="_blank"
+                className="flex items-center p-3 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-blue-500/50 transition-colors"
+                >
                 <span className="text-gray-300">{skill.name}</span>
-              </div>
+              </a>
             ))}
           </div>
         </div>
