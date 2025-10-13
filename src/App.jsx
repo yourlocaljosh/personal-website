@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import quicktrainImage from './assets/images/quicktrain.PNG';
 import ELObot from './assets/images/elobot.PNG';
 import portraitImage from './assets/images/portrait.jpg';
+
 import stockImage from './assets/images/stocks.png';
 import lettermanImage from './assets/images/letterman.png';
 import pqImage from './assets/images/priorityQueue.jpg';
