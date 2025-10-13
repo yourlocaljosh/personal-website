@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 import quicktrainImage from './assets/images/quicktrain.PNG';
 import ELObot from './assets/images/elobot.PNG';
 import portraitImage from './assets/images/portrait.jpg';
+import stockImage from './assets/images/stocks.png';
+import lettermanImage from './assets/images/letterman.png';
+import pqImage from './assets/images/priorityQueue.jpg';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -91,6 +94,24 @@ const App = () => {
       technologies: ["Python", "Discord Bot API"],
       github: "https://github.com/yourlocaljosh/ELObot",
       image: ELObot
+    },
+    {
+      title: "Stock Exchange Simulator",
+      description: "High performance stock exchange simulator using custom priority queue and data struct implementations.",
+      technologies: ["C++", "Data Structures and Algorithms"],
+      image: stockImage
+    },
+    {
+      title: "Letterman 2.0",
+      description: "Route from one word to another given a list of words using BFS/DFS one morph at a time.",
+      technologies: ["C++", "Data Structures and Algorithms"],
+      image: lettermanImage
+    },
+    {
+      title: "Custom PQ Library",
+      description: "Advanced implementations of a binary heap, sorting priority queue, and pairing heap.",
+      technologies: ["C++", "Data Structures and Algorithms"],
+      image: pqImage
     },
   ];
 
