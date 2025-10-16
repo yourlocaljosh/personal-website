@@ -109,9 +109,10 @@ const App = () => {
       image: lettermanImage
     },
     {
-      title: "Custom PQ Library",
-      description: "Advanced implementations of a binary heap, sorting priority queue, and pairing heap.",
+      title: "Advanced PQ Library and Custom AVL Tree",
+      description: "Advanced implementations of a binary heap, sorting priority queue, and pairing heap. In addition, AVL Tree implementation from scratch in the GitHub.",
       technologies: ["C++", "Data Structures and Algorithms"],
+      github:"https://github.com/yourlocaljosh/avl-tree",
       image: pqImage
     },
   ];
