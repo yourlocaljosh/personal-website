@@ -54,7 +54,7 @@ const App = () => {
     firstName: "Seungwon",
     nickname: "Josh",
     lastName: "Hong",
-    title: "Data Science @ U-M",
+    title: "Computer Engineering @ U-M",
     university: "University of Michigan",
     year: "Sophomore",
     location: "Ann Arbor, MI",
@@ -119,10 +119,10 @@ const App = () => {
 
   const education = [
     {
-      degree: "Data Science",
+      degree: "Computer Engineering",
       school: "University of Michigan | joshsw@umich.edu",
       duration: "2024 - 2028",
-      gpa: "B.S.",
+      gpa: "B.S.E.",
       coursework: ["Data Structures & Algorithms", "Discrete Mathematics", "Computer Organization", "Linear Algebra"]
     }
   ];
