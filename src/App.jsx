@@ -623,7 +623,7 @@ const App = () => {
               <h3 className="text-xl font-bold text-blue-400 mb-2">
                 {personalInfo.firstName} "{personalInfo.nickname}" {personalInfo.lastName}
               </h3>
-              <p className="text-gray-400">{personalInfo.title} at {personalInfo.university}</p>
+              <p className="text-gray-400">Computer Engineering at {personalInfo.university}</p>
             </div>
             <div className="flex space-x-6">
               <a href="https://github.com/yourlocaljosh" target="_blank" className="text-gray-400 hover:text-white transition-colors">
