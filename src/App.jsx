@@ -8,6 +8,7 @@ import portraitImage from './assets/images/portrait.jpg';
 import stockImage from './assets/images/stocks.png';
 import lettermanImage from './assets/images/letterman.png';
 import pqImage from './assets/images/priorityQueue.jpg';
+import mhacksImage from './assets/images/mhacks25.png';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -129,19 +130,19 @@ const App = () => {
 
   const extrasItems = [
     {
-      title: "Watch Me Code",
-      description: "Watch me create the part of the website this very video is in",
-      type: "video",
-      media: "https://www.youtube.com/embed/rIPxg3o0R48",
-      tags: ["Coding"]
+      title: "MHacks 25",
+      description: "I participated in my first Hackathon in September",
+      type: "image",
+      media: mhacksImage,
+      tags: ["Coding", "Hackathon"]
     },
     {
-      title: "Coming Soon",
-      description: "I joined the Michigan Table Tennis Club recently. Watch me improve! (soon)",
+      title: "Coding POV",
+      description: "Watch me create the part of the website this very video is in",
       type: "video",
-      media: "https://www.youtube.com/embed/",
-      tags: ["Sports"]
-    }
+      media: "https://www.youtube.com/embed/fP0D-zj19fQ?si=UQDHecj7kf3lmnbz",
+      tags: ["Coding"]
+    },
   ]
 
   const containerVariants = {
