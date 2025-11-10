@@ -76,7 +76,7 @@ const App = () => {
       title: "Web Developer",
       company: "Klawsome",
       duration: "Summer 2025",
-      description: "Designing front-end components to innovate Squaresoace website for UX",
+      description: "Designing front-end component concepts for improved UX",
       technologies: ["Squarespace", "React.js", "CSS"]
     },
   ];
