@@ -73,6 +73,13 @@ const App = () => {
 
   const experiences = [
     {
+      title: "Software Engineer Intern",
+      company: "???",
+      duration: "Summer 2026",
+      description: "Will update with my incoming internship when all checks are cleared",
+      technologies: []
+    },
+    {
       title: "Web Developer",
       company: "Klawsome",
       duration: "Summer 2025",
