@@ -73,11 +73,11 @@ const App = () => {
 
   const experiences = [
     {
-      title: "Software Engineer Intern",
+      title: "Web Developer",
       company: "Klawsome",
       duration: "Summer 2025",
-      description: "Designing and developing front-end web interface for improved customer interaction",
-      technologies: ["React.js", "HTML", "CSS"]
+      description: "Designing front-end components to innovate Squaresoace website for UX",
+      technologies: ["Squarespace", "React.js", "CSS"]
     },
   ];
 
