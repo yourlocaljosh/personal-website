@@ -9,6 +9,7 @@ import stockImage from './assets/images/stocks.png';
 import lettermanImage from './assets/images/letterman.png';
 import pqImage from './assets/images/priorityQueue.jpg';
 import mhacksImage from './assets/images/mhacks25.png';
+import logmanCommits from './assets/images/logman.png';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
@@ -136,6 +137,13 @@ const App = () => {
   ];
 
   const extrasItems = [
+    {
+      title: "EECS 281 Project",
+      description: "I clocked 102 commits for a dang SOLO school project and didn't even get a 100 I am dejected and I will crawl into a hole and hibernate",
+      type: "image",
+      media: logmanCommits,
+      tags: ["Coding", "Data Structures & Algorithms"]
+    },
     {
       title: "MHacks 25",
       description: "I participated in my first Hackathon in September",
